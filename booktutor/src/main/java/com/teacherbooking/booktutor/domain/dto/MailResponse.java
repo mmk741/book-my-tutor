@@ -1,4 +1,4 @@
-package com.teacherbooking.booktutor.dto;
+package com.teacherbooking.booktutor.domain.dto;
 
 public class MailResponse {
 	private String message;

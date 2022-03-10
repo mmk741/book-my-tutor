@@ -7,4 +7,5 @@ public class Constant {
 
     //Module Path
     public static final String TUTOR_BOOKING_WELCOME_PATH = "welcome/";
+    public static final String SUBMIT_BOOKING_FORM_PATH = "submit-form/";
 }

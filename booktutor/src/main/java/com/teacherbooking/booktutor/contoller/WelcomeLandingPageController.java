@@ -1,15 +1,14 @@
 package com.teacherbooking.booktutor.contoller;
 
 import com.teacherbooking.booktutor.constant.Constant;
-import com.teacherbooking.booktutor.dto.MailRequest;
-import com.teacherbooking.booktutor.dto.MailResponse;
-import com.teacherbooking.booktutor.services.EmailService;
+import com.teacherbooking.booktutor.domain.dto.MailRequest;
+import com.teacherbooking.booktutor.domain.dto.MailResponse;
+import com.teacherbooking.booktutor.services.Impl.EmailServiceImpl;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,7 +26,7 @@ public class WelcomeLandingPageController {
     
     
     @Autowired
-	private EmailService service;
+	private EmailServiceImpl service;
 
 	@PostMapping("/sendingEmail")
 	public MailResponse sendEmail(@RequestBody MailRequest request) {
