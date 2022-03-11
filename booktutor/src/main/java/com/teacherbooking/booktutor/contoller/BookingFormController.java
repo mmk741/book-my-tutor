@@ -5,6 +5,7 @@ import com.teacherbooking.booktutor.domain.BookingForm;
 import com.teacherbooking.booktutor.domain.request.SubmitBookingForm;
 import com.teacherbooking.booktutor.services.BookingFormService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping(path = Constant.TUTOR_BOOKING_PATH)
+@CrossOrigin
 public class BookingFormController {
 
     @Autowired BookingFormService bookingFormService;
