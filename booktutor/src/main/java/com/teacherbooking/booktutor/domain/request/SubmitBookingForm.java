@@ -2,6 +2,7 @@ package com.teacherbooking.booktutor.domain.request;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.teacherbooking.booktutor.constant.Constant;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +18,6 @@ public class SubmitBookingForm {
 
 
     private Date date;
-
     private String userEmail;
     private String userName;
     private String userClass;
@@ -32,7 +32,7 @@ public class SubmitBookingForm {
     @JsonCreator
     public SubmitBookingForm(@JsonProperty("userEmail") String userEmail, @JsonProperty("userName") String userName, @JsonProperty("userClass") String userClass,
                              @JsonProperty("address") String address, @JsonProperty("primaryPhone") Long primaryPhone, @JsonProperty("secondaryPhone") Long secondaryPhone,
-                             @JsonProperty("isParent") Boolean isParent, @JsonProperty("scheduleDate") Date scheduleDate, @JsonProperty("scheduleTime") Time scheduleTime,
+                             @JsonProperty("isParent") Boolean isParent, @JsonProperty("scheduleDate") String scheduleDate, @JsonProperty("scheduleTime") Time scheduleTime,
                              @JsonProperty("sub") String sub, @JsonProperty("Date") Date date) {
 
         this.userEmail = userEmail;
@@ -42,7 +42,11 @@ public class SubmitBookingForm {
         this.primaryPhone = primaryPhone;
         this.secondaryPhone = secondaryPhone;
         this.isParent = isParent;
-        this.scheduleDate = scheduleDate;
+        try{
+            this.scheduleDate = Constant.dateFormat.parse(scheduleDate.toString());
+        }catch (Exception e){
+            return;
+        }
         this.scheduleTime = scheduleTime;
         this.sub = sub;
     }
