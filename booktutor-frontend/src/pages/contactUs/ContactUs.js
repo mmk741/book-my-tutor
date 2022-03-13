@@ -30,11 +30,15 @@ function ContactUs() {
     const res=await postFormData(formData);
     console.log(res);
     console.log(formData);
-
-
-   
-
   }
+
+  const testDate=new Date()
+
+
+  var minDate=new Date();
+  minDate.setDate(minDate.getDate()+1);
+  minDate=minDate.toISOString().slice(0,10);
+
 
   return (
     <>
@@ -88,7 +92,7 @@ function ContactUs() {
 
   <Form.Group className="mb-3" controlId="date">
     <Form.Label>Appointment Date</Form.Label>
-    <Form.Control type="date" placeholder="Appointment Date" name="date" value={formData.date}  onChange={onChangeHandler} />
+    <Form.Control type="date"  min={minDate}  placeholder="Appointment Date" name="date" value={formData.date}  onChange={onChangeHandler} />
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="isParent" >
@@ -103,6 +107,7 @@ function ContactUs() {
     Submit
   </Button>
 </Form>
+
      </div>
 
 </div>

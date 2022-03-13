@@ -1,9 +1,25 @@
+
 .color-nav{
-    background-color: rgb(124, 161, 124);
+    background-color: #fff
 }
 
-.navbar-brand {
-    margin-right: 4%;
-    margin-left: 2rem;
+
+.navbar-light .navbar-brand {
+    color: royalblue !important;
+    font-weight: 600;
 }
 
+.navbar-expand-sm .navbar-collapse {
+   justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(37 36 36 / 90%);
+    border-bottom: 1px solid;
+}
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
