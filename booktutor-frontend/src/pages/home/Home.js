@@ -10,9 +10,9 @@ import CardComponent from '../../component/card/CardComponent';
 function Home() {
   return (
 <>
-    <section  className='header'>
-    <div className='container-fluid '>
-  <div className='row'>
+    <section  className='header  '>
+    <div className='container-fluid  '>
+  <div className='row '>
     <div className='col-10 mx-auto'>
     <div className='row'>
          <div className='col-md-6 pt-5  pt-lg-0 order-2 order-lg-1'>
@@ -32,8 +32,9 @@ function Home() {
 
     </div>
 
-<div className="row mt-5  ">
-
+<div className="row mt-5  " id='tutors'>
+ 
+ <h2 id='tutors'>Our Team</h2>
    <CardComponent/>
    <CardComponent/>
    <CardComponent/>

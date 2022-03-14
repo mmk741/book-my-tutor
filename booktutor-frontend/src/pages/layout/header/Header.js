@@ -11,10 +11,8 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <>
-<div className='container-fluid '>
-  <div className='row'>
-    <div className='col-10 mx-auto'>
-    <Navbar className='color-nav' variant="light"
+
+    <Navbar className='color-nav ' variant="light"
     sticky="top" expand="sm" collapseOnSelect>
    
    
@@ -33,9 +31,7 @@ function Header() {
     </Navbar.Collapse>
 
   </Navbar>
-  </div>
-  </div>
-</div>
+  
 
 
 </>

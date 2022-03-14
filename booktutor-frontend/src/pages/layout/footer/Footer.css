@@ -2,7 +2,7 @@
     background-color: #fff;
    display: flex;
    justify-content: space-between;
-   position: fixed;
+   /* position: fixed; */
    bottom: 0;
 
   min-height: 2.5rem;  

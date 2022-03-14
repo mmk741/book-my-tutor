@@ -1,6 +1,17 @@
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    padding-left: 4rem;
+    /* padding-right: 11rem; */
+}
+
+
 .color-nav{
-    background-color: #fff
+    background-color: burlywood
 }
 
 
@@ -19,7 +30,3 @@
 }
 
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
