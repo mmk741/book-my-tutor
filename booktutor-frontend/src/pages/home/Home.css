@@ -43,3 +43,27 @@ text-decoration: none;
 .row{
     justify-content: space-between;
 }
+
+.form{
+    position: absolute;
+    width: 60rem;
+    top: -2.7rem;
+    right:0%;
+   
+    
+   
+
+}
+
+
+@media only screen and (max-width: 1080px) {
+    
+    .form{
+        position: relative;
+        width: 100%;
+        align-items: center;
+        top: 0.1rem;
+    }
+}
+
+

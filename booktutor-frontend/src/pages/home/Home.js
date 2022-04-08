@@ -3,6 +3,7 @@ import './Home.css';
 import img from '../../assets/images/toBeDeleted.jpg'
 import { NavLink } from 'react-router-dom';
 import CardComponent from '../../component/card/CardComponent';
+import ContactUs from '../contactUs/ContactUs';
 
 
 
@@ -13,8 +14,8 @@ function Home() {
     <section  className='header  '>
     <div className='container-fluid  '>
   <div className='row '>
-    <div className='col-10 mx-auto'>
-    <div className='row'>
+    <div className='col-11 mx-auto'>
+    <div className='header-section row'>
          <div className='col-md-6 pt-5  pt-lg-0 order-2 order-lg-1'>
              <h1>Tutor of your choice only at <strong className='brand-name'>ApnaTutor</strong></h1>
              <h2 className='my-3'>
@@ -32,7 +33,10 @@ function Home() {
 
     </div>
 
-<div className="row mt-5  " id='tutors'>
+  
+  
+
+{/* <div className="row mt-5  " id='tutors'>
  
  <h2 id='tutors'>Our Team</h2>
    <CardComponent/>
@@ -47,12 +51,19 @@ function Home() {
    <CardComponent/>
    <CardComponent/>
    <CardComponent/>
-   </div>
+   </div> */}
    
    
   
     </div>
   </div>
+
+  <div className=" row form ">
+  <div className='col-11 mx-auto'>
+   <ContactUs/>
+   </div>
+   </div>
+
 </div>
 </section>
 
