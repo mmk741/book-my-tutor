@@ -1,69 +1,83 @@
-.header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-   min-height: 25rem;
 
-    
+/* Header section */
+.header-section{
+    height: 100vh;
+    background-color: #F0FFF0;
 }
-
-.header h1{
-    margin: 0 0 10 0;
+.header-details h6{
+    color: #FD511A;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.header-details h1{
+    font-weight: bold;
     font-size: 48px;
-    font-weight: 400;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 19px;
+}
+.header-details h1 span{
+    color: #21B573;
+}
+.header-details p{
+    font-size: 16px;
+    line-height: 36px;
+    color: #6C6B6B;
+    margin-bottom: 15px;
+}
+.get-btn{
+    padding: 12px 35px;
+    background-color: #21B573;
+    color: #ffffff;
+    border: none;
+    border-radius: 33px;
+    transition: all .3s;
+}
+.get-btn:hover{
+    background-color: #1d9660;
 }
 
-.header .brand-name{
-    color: royalblue;
-}
-
-.header h2{
-    color: #484848;
-    font-size: 24px;
-}
-
-.header .btn-custom{
-font-weight: 500;
-font-size: 16px;
-letter-spacing: 1px;
-display: inline-block;
-padding: 10px 30px;
-border-radius: 50px;
-transition: 0.5s;
-color: royalblue;
-border: 2px solid blue;
-text-decoration: none;
-
-}
-
-.header .btn-custom:hover{
-    background-color: rgba(89, 89, 238, 0.308);
-}
-
-.row{
-    justify-content: space-between;
-}
+/* form */
 
 .form{
     position: absolute;
-    width: 60rem;
-    top: -2.7rem;
-    right:0%;
-   
-    
-   
-
+    top:24px;
+    right: 0px;
+    width: 50vw;
 }
 
 
-@media only screen and (max-width: 1080px) {
-    
-    .form{
-        position: relative;
-        width: 100%;
-        align-items: center;
-        top: 0.1rem;
+/* Responsive Css */
+@media only screen and (max-width: 1024px) {
+    .header-section{
+        padding-top: 80px;
     }
 }
+@media only screen and (max-width: 991px) {
+    .header-section {
+        height: 100%;
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+    .header-details {
+        padding-top: 0px;
+    }
 
+    .form{
+        position: relative;
+        width: 98vw;
+    }
+   
+}
+
+@media only screen and (max-width: 575px) {
+    .header-details h1 {
+        font-size: 44px;
+        line-height: 65px;
+        margin-bottom: 15px;
+    }
+   
+}
 

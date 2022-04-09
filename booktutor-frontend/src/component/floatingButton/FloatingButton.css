@@ -1,0 +1,49 @@
+.floating{
+    
+    position: fixed;
+    bottom: 0px;
+    background:#21B573;
+    text-align: center;
+    z-index: 999;
+    min-width: 100vw;
+    min-height: 30px;
+}
+
+.floating a{
+   
+    color: #fff;
+text-decoration: none;
+
+}
+
+
+
+@media only screen and (min-width: 767px){
+    .floating {
+        
+        min-width: 0px;
+        min-height: 0px;
+        height: 0;
+        width: 16em;
+        position: fixed;
+        right: -6em;
+        top: 50%;
+        z-index: 1000;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+    }
+
+    .floating a {
+        background:#21B573;
+        color: #fff;
+        padding: 10px;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+   
+}

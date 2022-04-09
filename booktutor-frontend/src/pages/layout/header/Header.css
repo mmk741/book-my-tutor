@@ -5,7 +5,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .navbar{
-    padding-left: 4rem;
+    padding-left: 2rem;
     /* padding-right: 11rem; */
 }
 
@@ -16,11 +16,11 @@ a, a:hover, a:focus, a:active {
 
 
 .navbar-light .navbar-brand {
-    color: royalblue !important;
+    color: rgb(55, 53, 61) !important;
     font-weight: 600;
 }
 
-.navbar-expand-sm .navbar-collapse {
+.navbar-expand-md .navbar-collapse {
    justify-content: flex-end;
 }
 
@@ -28,5 +28,4 @@ a, a:hover, a:focus, a:active {
     color: rgb(37 36 36 / 90%);
     border-bottom: 1px solid;
 }
-
 

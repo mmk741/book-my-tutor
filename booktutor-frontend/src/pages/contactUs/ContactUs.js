@@ -38,7 +38,7 @@ function ContactUs() {
           </div>
 
           <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3 " controlId="UserName">
+            <Form.Group className="mb-1 " controlId="UserName">
               <Form.Label>User Name</Form.Label>
               <Form.Control
                 type="text"
@@ -49,7 +49,7 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="Email">
+            <Form.Group className="mb-1" controlId="Email">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
@@ -60,13 +60,16 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <label htmlFor="userClass" className="mb-2">
+            
+            <div className="row">
+<div className="col ">
+            <label htmlFor="userClass" className="mb-1">
               Class
             </label>
             <Form.Select
               name="userClass"
               value={formData.userClass}
-              className="mb-3"
+              className="mb-1"
               onChange={onChangeHandler}
               aria-label="Default select example"
             >
@@ -77,8 +80,9 @@ function ContactUs() {
               <option value="11">11th</option>
               <option value="12">12th</option>
             </Form.Select>
-
-            <label htmlFor="subject" className="mb-2">
+</div>
+<div className="col ">
+            <label htmlFor="subject" className="mb-1">
               Subject
             </label>
             <Form.Select
@@ -93,14 +97,16 @@ function ContactUs() {
               <option value="chemistry">Chemistry</option>
               <option value="math">Math</option>
             </Form.Select>
+</div>
+            </div>
 
-            <label htmlFor="board" className="mb-2">
+            <label htmlFor="board" className="mb-1">
               Select Board
             </label>
             <Form.Select
               name="board"
               value={formData.board}
-              className="mb-3"
+              className="mb-1"
               onChange={onChangeHandler}
               aria-label="Default select example"
             >
@@ -113,7 +119,7 @@ function ContactUs() {
               <option value="ICSE">ICSE</option>
             </Form.Select>
 
-            <Form.Group className="mb-3" controlId="Address">
+            <Form.Group className="mb-1" controlId="Address">
               <Form.Label>Adderss</Form.Label>
               <Form.Control
                 type="text"
@@ -124,7 +130,7 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="PrimaryPhone">
+            <Form.Group className="mb-1" controlId="PrimaryPhone">
               <Form.Label>Primary Phone No.</Form.Label>
               <Form.Control
                 type="tel"
@@ -135,7 +141,7 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="SecondaryPhone">
+            <Form.Group className="mb-1" controlId="SecondaryPhone">
               <Form.Label>Secondary Phone No.</Form.Label>
               <Form.Control
                 type="tel"
