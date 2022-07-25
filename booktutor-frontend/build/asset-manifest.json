@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.be5ba0db.css",
-    "main.js": "/static/js/main.a76ad0d2.js",
-    "static/js/787.ba126eb5.chunk.js": "/static/js/787.ba126eb5.chunk.js",
-    "static/media/toBeDeleted.jpg": "/static/media/toBeDeleted.d5bc580ea665c395992b.jpg",
-    "index.html": "/index.html",
-    "main.be5ba0db.css.map": "/static/css/main.be5ba0db.css.map",
-    "main.a76ad0d2.js.map": "/static/js/main.a76ad0d2.js.map",
-    "787.ba126eb5.chunk.js.map": "/static/js/787.ba126eb5.chunk.js.map"
+    "main.css": "/book-my-tutor/static/css/main.8d477267.css",
+    "main.js": "/book-my-tutor/static/js/main.0f2b7783.js",
+    "static/js/787.ba126eb5.chunk.js": "/book-my-tutor/static/js/787.ba126eb5.chunk.js",
+    "static/media/toBeDeleted.jpg": "/book-my-tutor/static/media/toBeDeleted.d5bc580ea665c395992b.jpg",
+    "static/media/header-image.png": "/book-my-tutor/static/media/header-image.db79430f2a47b1d636d9.png",
+    "index.html": "/book-my-tutor/index.html",
+    "main.8d477267.css.map": "/book-my-tutor/static/css/main.8d477267.css.map",
+    "main.0f2b7783.js.map": "/book-my-tutor/static/js/main.0f2b7783.js.map",
+    "787.ba126eb5.chunk.js.map": "/book-my-tutor/static/js/787.ba126eb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be5ba0db.css",
-    "static/js/main.a76ad0d2.js"
+    "static/css/main.8d477267.css",
+    "static/js/main.0f2b7783.js"
   ]
 }
